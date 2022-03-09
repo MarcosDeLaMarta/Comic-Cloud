@@ -136,22 +136,34 @@
                   <h2 class="fw-bold text-center py-5">Bienvenido</h2>
   
                   <!--regristo-->
-                  <form action="#">
+                  <form action="#" class="needs-validation" novalidate>
                     <div class="mb-4">
                       <label for="fecha" class="form-label">Fecha de nacimiento</label>
-                      <input type="date" class="form-control" name="date">
+                      <input type="date" class="form-control" name="date"  id="validationCustom01" required>
+                      <div class="invalid-feedback">
+                        Por favor ingrese una fecha
+                      </div>
                   </div>
                     <div class="mb-4">
                         <label for="email" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" name="emai">
+                        <input type="email" class="form-control" name="emai" required>
+                        <div class="invalid-feedback">
+                          Correo invalido
+                        </div>
                     </div>
                     <div class="mb-4">
                      <label for="password" class="form-label">Contraseña</label>
-                     <input type="password" class="form-control" name="password">
+                     <input type="password" class="form-control" name="password"  id="validationCustom02" required>
+                     <div class="invalid-feedback">
+                      Contraseña invalida
+                    </div>
                     </div>
                      <div class="mb-4">
                       <label for="apodo" class="form-label">Nombre de Usuario</label>
-                      <input type="text" class="form-control" name="apodo">
+                      <input type="text" class="form-control" name="apodo"  id="validationCustom03" required>
+                      <div class="invalid-feedback">
+                        Nombre de usuario invalido
+                      </div>
                      </div>
                      <div class="mb-4">
                       <small id="opcional" class="text-muted">
@@ -162,15 +174,19 @@
                      </div>
                     <div class="mb-4">
                       <label for="preguntas" class="form-label">Selecciones una pregunta de seguridad</label>
-                      <select class="form-control mb-3">
+                      <select class="form-control mb-3" required>
+                          <option selected disabled value="">Seleccione...</option>
                           <option>Nombre de tu mascota</option>
                           <option>Nombre de tu mejor amigo</option>
                           <option>Nombre de tu colegio</option>
                       </select>
-                      <input type="text" class="form-control" name="respuesta">
+                      <input type="text" class="form-control" name="respuesta"  id="validationCustom04" required>
+                      <div class="invalid-feedback">
+                        Seleccione una pregunta
+                      </div>
                     </div>
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
                     </div>
                     <div class="my-3">
                         <span>Ya tienes cuenta? <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Inicia Sesión</a></span>
@@ -228,18 +244,19 @@
                    <form action="#">
                      <div class="mb-4">
                          <label for="email" class="form-label">Correo electrónico</label>
-                         <input type="email" class="form-control" name="emai">
+                         <input type="email" class="form-control" name="emai"  id="usuario">
                      </div>
                      <div class="mb-4">
                       <label for="password" class="form-label">Contraseña</label>
-                      <input type="password" class="form-control" name="password">
+                      <input type="password" class="form-control" name="password" id="clave">
                      </div>
                      <div class="mb-4 form-check">
                          <input type="checkbox" name="connected" class="form-check-input">
                          <label for="connected" class="form-check-label">Mantener sesión iniciada</label>
                      </div>
+                     <p class="error" id="error"></p>
                      <div class="d-grid">
-                         <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                         <button type="submit" class="btn btn-primary" onclick="Validar()">Iniciar Sesión</button>
                      </div>
                      <div class="my-3">
                          <span>No tienes cuenta? <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">Regístrate</a></span>
@@ -275,11 +292,7 @@
 </div>
 
 
-<script>
-
-</script>
-
-
+<script src="scrips.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>

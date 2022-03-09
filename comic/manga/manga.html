@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Comics Cloud</title>
+<link href="/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="navbar navbar-expand-lg bg-secondary text-uppercase " id="mainNav">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand ms-5" href="/main.html"><img src="/img/logo.png" class="img-fluid logo" alt="..."></a>
+            <p class="navbar-brand text-white m-lg-2 ms-5 nombretitulo">Comic Cloud</p>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item mt-2"><input class="form-control " type="search" placeholder="Buscar" aria-label="Search"></li>    
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#"><i class="bi bi-person-circle"></i> Perfil</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/index.html"><i class="bi bi-box-arrow-right"></i> Cerrar sesión</a></li>
+                </ul>
+            </div>
+            <small class="text-white ms-4 horario">Lunes a Sábado De 11:00 a <br>13:30 y de 17:00 a 19:30 hrs</small>
+        </div>
+        
+    </header>
+      <div class="container-fluid bg-oscuro ps-5 ">    
+        <nav class="navbar navbar-expand-lg navbar-light bg-oscuro navegacion ">
+            <div class="navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ">
+                <li class="nav-item active px-3">
+                  <a class="nav-link text-white" href="/main.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link text-white" href="/comic/marvel/marvel.html">Marvel</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link text-white" href="/comic/dc/dc.html">DC Comics</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link text-white" href="/comic/manga/manga.html">Manga</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link text-white" href="/comic/europeo/europeo.html">Cómics Europeos</a>
+                </li>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="container-fluid">
+          
+          <!--Marvel-->
+          <div class="row p-5 d-flex justify-content-around bg-primary">
+            
+            <h1 class="nav-link text-white text-center bg-secondary rounded">Manga</h1>
+
+            <div class="card col-xs-12 col-3 my-2" style="width: 18rem;">
+                <a href="/comic/manga/blancanieves.html"><img src="/img/manga/pelirroja.jpg" class="card-img-top pt-2 "alt="..."></a>
+                <div class="card-body">
+                  <h5 class="card-title">LA BLANCANIEVES PELIRROJA # 10</h5>
+                  <p class="card-text"><button type="button" class="btn btn-primary btn-sm">Manga</button> </p>
+                  <p class="card-text text-red">7,60 € <span class="tachado">8,00 €</span></p>
+                  <div class="d-grid gap-2">
+                  <a href="/comic/manga/blancanieves.html" class="btn btn-success"><i class="bi bi-cart-check"></i> Añadir a la cesta</a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card col-xs-12 col-3 my-2" style="width: 18rem; ">
+                <a href="/comic/manga/dragonball.html"><img src="/img/manga/Dragon-ball.jpg" class="card-img-top pt-2"alt="..."></a>
+                <div class="card-body">
+                  <h5 class="card-title">DRAGON BALL # 01 ULTIMATE EDITION NUEVA EDICIÓN</h5>
+                  <p class="card-text"><button type="button" class="btn btn-primary btn-sm">Manga</button></p>
+                  <p class="card-text text-red">8,50 €<span class="tachado">8,95 €</span></p>
+                  <div class="d-grid gap-2">
+                  <a href="/comic/manga/dragonball.html" class="btn btn-success"><i class="bi bi-cart-check"></i> Añadir a la cesta</a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card col-xs-12 col-3 my-2" style="width: 18rem;">
+                <a href="/comic/manga/tokyo.html"><img src="/img/manga/tokyo.jpg" class="card-img-top pt-2 "alt="..."></a>
+                <div class="card-body">
+                    <br>
+                    <br>
+                  <h5 class="card-title">TOKYO REVENGERS # 04</h5>
+                  
+                  <p class="card-text"><button type="button" class="btn btn-primary btn-sm">Manga</button></p>
+                  <p class="card-text text-red"> 15,20 €<span class="tachado">16,00 €</span></p>
+                  <div class="d-grid gap-2">
+                  <a href="/comic/dc/catwoman.html" class="btn btn-success"><i class="bi bi-cart-check"></i> Añadir a la cesta</a>
+                  </div>
+                </div>
+              </div>
+
+
+            <div class="card col-xs-12 col-3 my-2" style="width: 18rem;">
+                <a href="/comic/manga/nilchan.html"><img src="/img/manga/nilchan.jpg" class="card-img-top pt-2 "alt="..."></a>
+                <div class="card-body">
+                    <br>
+                    <br>
+                  <h5 class="card-title">NII-CHAN</h5>
+                  <p class="card-text"><button type="button" class="btn btn-primary btn-sm">Manga</button></p>
+                  <p class="card-text text-red">  9,45 €<span class="tachado">9,95 €</span></p>
+                  <div class="d-grid gap-2">
+                  <a href="/comic/dc/aquaman.html" class="btn btn-success"><i class="bi bi-cart-check"></i> Añadir a la cesta</a>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          <div class="row p-5 d-flex flex-row-reverse justify-content-around bg-primary ">
+
+            <div class="card col-xs-12 col-3 my-2" style="width: 18rem;">
+                <a href="/comic/manga/blancanieves.html"><img src="/img/manga/pelirroja.jpg" class="card-img-top pt-2 "alt="..."></a>
+                <div class="card-body">
+                  <h5 class="card-title">LA BLANCANIEVES PELIRROJA # 10</h5>
+                  <p class="card-text"><button type="button" class="btn btn-primary btn-sm">Manga</button> </p>
+                  <p class="card-text text-red">7,60 € <span class="tachado">8,00 €</span></p>
+                  <div class="d-grid gap-2">
+                  <a href="/comic/manga/blancanieves.html" class="btn btn-success"><i class="bi bi-cart-check"></i> Añadir a la cesta</a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card col-xs-12 col-3 my-2" style="width: 18rem; ">
+                <a href="/comic/manga/dragonball.html"><img src="/img/manga/Dragon-ball.jpg" class="card-img-top pt-2"alt="..."></a>
+                <div class="card-body">
+                  <h5 class="card-title">DRAGON BALL # 01 ULTIMATE EDITION NUEVA EDICIÓN</h5>
+                  <p class="card-text"><button type="button" class="btn btn-primary btn-sm">Manga</button></p>
+                  <p class="card-text text-red">8,50 €<span class="tachado">8,95 €</span></p>
+                  <div class="d-grid gap-2">
+                  <a href="/comic/manga/dragonball.html" class="btn btn-success"><i class="bi bi-cart-check"></i> Añadir a la cesta</a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card col-xs-12 col-3 my-2" style="width: 18rem;">
+                <a href="/comic/manga/tokyo.html"><img src="/img/manga/tokyo.jpg" class="card-img-top pt-2 "alt="..."></a>
+                <div class="card-body">
+                    <br>
+                    <br>
+                  <h5 class="card-title">TOKYO REVENGERS # 04</h5>
+                  
+                  <p class="card-text"><button type="button" class="btn btn-primary btn-sm">Manga</button></p>
+                  <p class="card-text text-red"> 15,20 €<span class="tachado">16,00 €</span></p>
+                  <div class="d-grid gap-2">
+                  <a href="/comic/dc/catwoman.html" class="btn btn-success"><i class="bi bi-cart-check"></i> Añadir a la cesta</a>
+                  </div>
+                </div>
+              </div>
+
+
+            <div class="card col-xs-12 col-3 my-2" style="width: 18rem;">
+                <a href="/comic/manga/nilchan.html"><img src="/img/manga/nilchan.jpg" class="card-img-top pt-2 "alt="..."></a>
+                <div class="card-body">
+                    <br>
+                    <br>
+                  <h5 class="card-title">NII-CHAN</h5>
+                  <p class="card-text"><button type="button" class="btn btn-primary btn-sm">Manga</button></p>
+                  <p class="card-text text-red">  9,45 €<span class="tachado">9,95 €</span></p>
+                  <div class="d-grid gap-2">
+                  <a href="/comic/dc/aquaman.html" class="btn btn-success"><i class="bi bi-cart-check"></i> Añadir a la cesta</a>
+                  </div>
+                </div>
+            </div>
+          
+
+        </div>
+
+      <!-- Footer-->
+      <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Contáctanos</h4>
+                    <p class="lead mb-0">
+                        Calle Veradilla
+                        <br />
+                        06830 La Zarza, Badajoz
+                        <br />
+                        +34 924 00 98 56
+                        <br />
+                        info@comicscloud.com
+                    </p>
+                </div>
+                <!-- Footer Iconos-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Redes Sociales</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-whatsapp"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-instagram"></i></a>
+                </div>
+                <!-- Footer descripcion-->
+                <div class="col-lg-4 ">
+                    <h4 class="text-uppercase mb-4">Info</h4>
+                    <p class="lead mb-0 ">
+                      Condiciones de uso<br>
+                      Ayuda<br>
+                      Gastos de envío<br>
+                      Devoluciones<br>
+                      Garantias<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright-->
+    <div class="copyright py-4 text-center text-white ">
+        <div class="container"><small>Copyright &copy; Comics Cloud 2022</small></div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
